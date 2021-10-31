@@ -1,0 +1,30 @@
+<component name="libraryTable">
+  <library name="br.com.devsrsouza.compose.icons.jetbrains:css-gg-desktop:1.0.0" type="repository">
+    <properties maven-id="br.com.devsrsouza.compose.icons.jetbrains:css-gg-desktop:1.0.0" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/br/com/devsrsouza/compose/icons/jetbrains/css-gg-desktop/1.0.0/css-gg-desktop-1.0.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/compose/runtime/runtime-desktop/0.5.0-build235/runtime-desktop-0.5.0-build235.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.5.0/kotlinx-coroutines-core-jvm-1.5.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib-common/1.5.10/kotlin-stdlib-common-1.5.10.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib/1.5.10/kotlin-stdlib-1.5.10.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/annotations/13.0/annotations-13.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/compose/foundation/foundation-desktop/0.5.0-build235/foundation-desktop-0.5.0-build235.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/compose/animation/animation-desktop/0.5.0-build235/animation-desktop-0.5.0-build235.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/compose/animation/animation-core-desktop/0.5.0-build235/animation-core-desktop-0.5.0-build235.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/compose/ui/ui-text-desktop/0.5.0-build235/ui-text-desktop-0.5.0-build235.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/compose/ui/ui-util-desktop/0.5.0-build235/ui-util-desktop-0.5.0-build235.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/compose/foundation/foundation-layout-desktop/0.5.0-build235/foundation-layout-desktop-0.5.0-build235.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/compose/ui/ui-desktop/0.5.0-build235/ui-desktop-0.5.0-build235.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlinx/kotlinx-coroutines-swing/1.5.0/kotlinx-coroutines-swing-1.5.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/compose/runtime/runtime-saveable-desktop/0.5.0-build235/runtime-saveable-desktop-0.5.0-build235.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/compose/ui/ui-geometry-desktop/0.5.0-build235/ui-geometry-desktop-0.5.0-build235.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/compose/ui/ui-graphics-desktop/0.5.0-build235/ui-graphics-desktop-0.5.0-build235.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/skiko/skiko-jvm/0.3.5/skiko-jvm-0.3.5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/compose/ui/ui-unit-desktop/0.5.0-build235/ui-unit-desktop-0.5.0-build235.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.5.10/kotlin-stdlib-jdk8-1.5.10.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.5.10/kotlin-stdlib-jdk7-1.5.10.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
