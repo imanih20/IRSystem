@@ -16,13 +16,15 @@ import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
+import database.DBSettings
+import org.jetbrains.exposed.sql.transactions.transaction
 import theme.TypoGraphy
 import ui.SearchView
 import ui.ShowView
 
 
 fun main() = application {
-    Window(onCloseRequest = ::exitApplication,resizable = true) {
+    Window(onCloseRequest = ::exitApplication,resizable = false) {
         App()
     }
 }
@@ -30,12 +32,14 @@ fun main() = application {
 @Composable
 @Preview
 fun App() {
+    DBSettings.db
+    DBSettings.createTable()
     MaterialTheme(
         typography = TypoGraphy
     ) {
         CompositionLocalProvider(LocalLayoutDirection provides LayoutDirection.Rtl){
             Row(Modifier.fillMaxSize()) {
-                SearchView(modifier = Modifier.fillMaxHeight().shadow(elevation = 5.dp).background(Color.LightGray).fillMaxWidth(0.33f))
+                SearchView(modifier = Modifier.fillMaxHeight().shadow(elevation = 5.dp).background(Color(red = 176,green = 204,blue = 219)).fillMaxWidth(0.33f))
                 ShowView(modifier = Modifier.fillMaxSize().align(Alignment.CenterVertically))
             }
         }
