@@ -31,9 +31,9 @@ import utils.TextFormatter
 @Composable
 fun SearchView(modifier: Modifier = Modifier){
     val list = mutableListOf<Sentence>(
-        Sentence("تست","00.txt",4),
-        Sentence("تست","00.txt",4),
-        Sentence("تست","00.txt",4)
+        Sentence(content = "تست",2,4),
+        Sentence("تست",2,4),
+        Sentence("تست",2,4)
     )
     Column(modifier) {
         TextFiled()
@@ -79,7 +79,7 @@ fun listItem(sentence: Sentence,modifier: Modifier = Modifier){
                     )
                 )
                 Text(
-                    sentence.fileName,
+                    "${sentence.fileId}",
                     style = TextStyle(
                         color = Color.Black,
                         textDirection = TextDirection.Ltr,

@@ -10,7 +10,13 @@ object DBSettings {
     fun createTable(){
         transaction {
             addLogger(StdOutSqlLogger)
-            SchemaUtils.create(SentenceTable,FileTable,FileSentenceTable)
+            SchemaUtils.createMissingTablesAndColumns(SentenceTable,FileTable)
         }
+    }
+    fun selectAll(table: Table) : List<ResultRow>{
+        val result = transaction {
+            table.selectAll().toList()
+        }
+        return result;
     }
 }

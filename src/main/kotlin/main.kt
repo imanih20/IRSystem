@@ -17,10 +17,12 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
 import database.DBSettings
-import org.jetbrains.exposed.sql.transactions.transaction
+import database.FileDao
+import database.SentenceTable
 import theme.TypoGraphy
 import ui.SearchView
 import ui.ShowView
+import values.DATA_REPOSITORY_PATH
 
 
 fun main() = application {
@@ -34,6 +36,9 @@ fun main() = application {
 fun App() {
     DBSettings.db
     DBSettings.createTable()
+    if(FileDao.selectAll().isEmpty()){
+        FileDao.importFiles(DATA_REPOSITORY_PATH)
+    }
     MaterialTheme(
         typography = TypoGraphy
     ) {

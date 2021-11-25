@@ -1,3 +1,3 @@
 package models
 
-data class Sentence(val content: String,val fileName: String,val line: Int)
+data class Sentence(val content: String,val fileId: Int,val line: Int)

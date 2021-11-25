@@ -1,26 +1,11 @@
 package utils
 
-object TextParser {
+import database.DBSettings
+import database.FileDao
+import models.Sentence
+import java.io.File
+import java.util.*
 
-    fun getSentences(content: String): List<String>{
-        var i = 0
-        val list = arrayListOf<String>()
-
-        val chars = content.chars().toArray()
-        val builder = StringBuilder()
-        while (i<chars.size){
-            val c = chars[i].toChar()
-            if ((c == '.' && chars[i+1].toChar() != '.' && chars[i-1].toChar() != '.') || c =='؟' || c == '!'){
-                list.add(builder.toString())
-                builder.clear()
-            } else {
-                builder.append(c)
-            }
-            i++
-        }
-        return list
-    }
-}
 
 object TextFormatter{
     fun toPersianNum(text: String) : String{
@@ -47,9 +32,8 @@ object TextFormatter{
 }
 
 fun main() {
-    val content = ContentLouder("/home/mohyeddin/Documents/test/45.txt").getContent()
-    val sent = TextParser.getSentences(content)
-    for (line in sent){
-        println(line)
-    }
+    DBSettings.db
+    val file = File("assets/dataFiles/04_fa_0.txt");
+    val contentLouder = ContentLouder(file)
+    println(contentLouder.getSentences().size)
 }
